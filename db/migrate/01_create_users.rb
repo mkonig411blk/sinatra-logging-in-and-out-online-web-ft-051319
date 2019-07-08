@@ -1,10 +1,9 @@
-class User < ActiveRecord::Base
-   def change
+class CreateUsers < ActiveRecord::Migration[5.2]
+  def change
     create_table :users do |t|
       t.string :username
       t.string :password
       t.integer :balance
     end
-  end
+  end 
 end 
-
