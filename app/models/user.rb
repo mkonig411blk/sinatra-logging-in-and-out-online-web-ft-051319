@@ -1,4 +1,4 @@
-class User 
+class User < ActiveRecord::Base
    def change
     create_table :users do |t|
       t.string :username
